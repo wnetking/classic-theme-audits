@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "watch": "webpack -w",
-        "build": "webpack",
+        "build": "webpack -p",
         "inline": "webpack --config webpack.config.inlineStyles.js"
     },
     "author": "PrestaShop",

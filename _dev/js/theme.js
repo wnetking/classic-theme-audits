@@ -39,6 +39,7 @@ import Form from './components/form';
 import ProductMinitature from './components/product-miniature';
 import ProductSelect from './components/product-select';
 import TopMenu from './components/top-menu';
+import deferLoad from './components/product-defered-load'
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';
@@ -66,4 +67,5 @@ $(document).ready(() => {
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+  deferLoad.init()
 });
