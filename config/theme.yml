@@ -1,10 +1,10 @@
-name: classic_optimized
-display_name: Classic Optimazed theme
+name: classic-theme-audits
+display_name: Classic theme with pass some Audits
 version: 1.0.0
 author:
-  name: "PrestaShop Team"
-  email: "pub@prestashop.com"
-  url: "http://www.prestashop.com"
+  name: "wnetking"
+  email: "wnetking1@gmail.com"
+  url: "https://wnetking.github.io/"
 
 meta:
   compatibility:
