@@ -8,6 +8,7 @@ Development configurations
 - PHP-5.6, Apache-2.4 + Nginx-1.9
 - Prestashop v1.7.3.0
 - clasic theme
+- modules on home page (image slider, featured products, banner, specials block, custom text blocks, new products block)
 
 First Audit
 --------
