@@ -23,26 +23,17 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<section id="new-product-module" class="featured-products clearfix mt-3 defered-load"
-        data-modulename="ps_newproducts">
+<section class="featured-products clearfix mt-3">
   <h1 class="h1 products-section-title text-uppercase">
     {l s='New products' d='Shop.Theme.Catalog'}
   </h1>
-  {nocache}
-    {if isset($smarty.request.custom_ajax_call)}
-  {/nocache}
-    <div class="products">
-      {foreach from=$products item="product"}
-        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-      {/foreach}
-    </div>
-    <a class="all-product-link float-xs-left float-md-right h4" href="{$allNewProductsLink}">
-      {l s='All new products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-    </a>
-  {else}
-    <div class="alert alert-info" role="alert">
-      Load the products ...
-    </div>
-  {/if}
+  <div class="products">
+    {foreach from=$products item="product"}
+      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+    {/foreach}
+  </div>
+  <a class="all-product-link float-xs-left float-md-right h4" href="{$allNewProductsLink}">
+    {l s='All new products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
+  </a>
 </section>
 

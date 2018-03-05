@@ -23,15 +23,8 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {foreach $javascript.external as $js}
-  {if $js.attribute === '' && $js.id !== 'corejs'}
-    <script type="text/javascript" src="{$js.uri}" async></script>
-  {else}
-    <script type="text/javascript" src="{$js.uri}" {$js.attribute}></script>
-  {/if}
+  <script type="text/javascript" src="{$js.uri}" {$js.attribute}></script>
 {/foreach}
-{* <pre> *}
-{* {$javascript.external|var_dump} *}
-{* </pre> *}
 
 {foreach $javascript.inline as $js}
   <script type="text/javascript">

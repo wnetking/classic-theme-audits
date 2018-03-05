@@ -22,17 +22,6 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-
-{if isset($smarty.request.modulename) && isset($smarty.request.custom_ajax_call)}
-    {widget name={$smarty.request.modulename}}
-    {return}
-{/if}
-
-{if isset($smarty.request.custom_ajax_call)}
-  {return}
-{/if}
-
 <!doctype html>
 <html lang="{$language.iso_code}">
 

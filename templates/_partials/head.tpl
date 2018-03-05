@@ -22,8 +22,6 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-
 {block name='head_charset'}
   <meta charset="utf-8">
 {/block}
@@ -47,16 +45,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 {/block}
 
-{block name="theme-color"}
-  <meta name="theme-color" content="#313131"/>
-{/block}
-
 {block name='head_icons'}
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
-{/block}
-{block name='inline-styles'}
-  {include file="_partials/head-inline-styles.tpl"}
 {/block}
 
 {block name='stylesheets'}

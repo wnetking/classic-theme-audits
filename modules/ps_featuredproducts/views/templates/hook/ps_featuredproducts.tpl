@@ -22,25 +22,16 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section id="feature-product-module" class="featured-products clearfix defered-load"
-  data-modulename="ps_featuredproducts">
+<section class="featured-products clearfix">
   <h1 class="h1 products-section-title text-uppercase">
     {l s='Popular Products' d='Shop.Theme.Catalog'}
   </h1>
-  {nocache}
-    {if isset($smarty.request.custom_ajax_call)}
-  {/nocache}
-    <div class="products">
-      {foreach from=$products item="product"}
-        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-      {/foreach}
-    </div>
-    <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink}">
-      {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-    </a>
-  {else}
-    <div class="alert alert-info" role="alert">
-      Load the products ...
-    </div>
-  {/if}
+  <div class="products">
+    {foreach from=$products item="product"}
+      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+    {/foreach}
+  </div>
+  <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink}">
+    {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
+  </a>
 </section>
