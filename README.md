@@ -9,6 +9,10 @@ Development configurations
 - Prestashop v1.7.3.0
 - clasic theme
 - modules on home page (image slider, featured products, banner, specials block, custom text blocks, new products block)
+- Performance configuration: 
+  - Template compilation - Recompile templates if the files have been updated
+  - Cache - yes
+  - Use cache - yes
 
 First Audit
 --------
