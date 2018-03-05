@@ -21,6 +21,7 @@ Roadmap
 - [ ] Defered scripts
 - [ ] lazy-load images
 - [ ] implement pwa
+- [ ] improve accessibility
 
 Contribute
 ----------
