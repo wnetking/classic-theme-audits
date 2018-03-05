@@ -1,4 +1,4 @@
-classic-theme-audits
+Prestashop classic theme audits.
 ========
 
 Work on performance prestashop 1.7 classic theme.
@@ -13,6 +13,13 @@ First Audit
 --------
 - Audit in progress
   
+  
+  
+Roadmap
+----------
+- [ ] Defered scripts
+- [ ] lazy-load images
+- [ ] implement pwa
 
 Contribute
 ----------
