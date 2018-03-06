@@ -35,7 +35,7 @@ Second Audit (first changes)
   |  -          |     PWA     | Performance | Accessibility | Best Practices |
   | :---------: | :---------: | :---------: | :-----------: | :------------: |
   |  -          |     45      |      66     |       100     |        75      |
-  |  with cach  |     --      |      --     |       --      |        --      |
+  |  with cach  |     --      |      68     |       --      |        --      |
   
   
 Roadmap
