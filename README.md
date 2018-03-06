@@ -1,7 +1,7 @@
 Prestashop classic theme audits.
 ========
 
-Work on performance prestashop 1.7 classic theme.
+Work on performance Prestashop 1.7 classic theme.
 
 Development configurations
 --------
@@ -55,8 +55,8 @@ Roadmap
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+- Issue Tracker: github.com/wnetking/classic-theme-audits/issues
+- Source Code: github.com/wnetking/classic-theme-audits
 
 Support
 -------
