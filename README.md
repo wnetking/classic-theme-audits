@@ -55,8 +55,8 @@ Roadmap
 Contribute
 ----------
 
-- Issue Tracker: github.com/wnetking/classic-theme-audits/issues
-- Source Code: github.com/wnetking/classic-theme-audits
+- [Issue Tracker](https://github.com/wnetking/classic-theme-audits/issues/)
+- [Source Code](https://github.com/wnetking/classic-theme-audits/)
 
 Support
 -------
