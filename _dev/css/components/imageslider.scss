@@ -6,8 +6,16 @@
   }
   .carousel-inner {
     height: 340px;
+
     @media (max-width: 767px) {
       height: auto;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 88px;
+
+      img {
+      }
     }
   }
   .carousel-item {
@@ -18,15 +26,15 @@
         height: auto;
       }
       @media (min-width: 768px) {
-      width: 100%;
-      margin-left: 0;
-    }
+        width: 100%;
+        margin-left: 0;
+      }
     }
     .caption {
       position: absolute;
       @media (min-width: 768px) {
-      bottom: 28px;
-      left: 90px;
+        bottom: 28px;
+        left: 90px;
       }
       @media (max-width: 767px) {
         bottom: 5px;
@@ -49,7 +57,7 @@
     .icon-next,
     .icon-prev {
       &::before {
-        content: "";
+        content: '';
       }
       i {
         font-size: 3.125rem;

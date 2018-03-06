@@ -53,6 +53,9 @@ for (var i in EventEmitter.prototype) {
   prestashop[i] = EventEmitter.prototype[i];
 }
 
+//custom scripts added
+import lazyLoadImages from './lazy-loading-images';
+
 $(document).ready(() => {
   let dropDownEl = $('.js-dropdown');
   const form = new Form();
@@ -60,10 +63,11 @@ $(document).ready(() => {
   let dropDown = new DropDown(dropDownEl);
   let topMenu = new TopMenu(topMenuEl);
   let productMinitature = new ProductMinitature();
-  let productSelect  = new ProductSelect();
+  let productSelect = new ProductSelect();
   dropDown.init();
   form.init();
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+  lazyLoadImages();
 });

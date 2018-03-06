@@ -8,7 +8,7 @@
               <a
                 class="{if $depth >= 0}dropdown-item{/if}{if $depth === 1} dropdown-submenu{/if}"
                 href="{$node.url}" data-depth="{$depth}"
-                {if $node.open_in_new_window} target="_blank" {/if}
+                {if $node.open_in_new_window} target="_blank" rel="noopener"{/if}
               >
                 {if $node.children|count}
                   {* Cannot use page identifier as we can have the same page several times *}

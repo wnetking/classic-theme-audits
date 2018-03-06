@@ -22,15 +22,22 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{assign var="image_placeholder" value='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='}
+
 {block name='product_miniature_item'}
   <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
         <a href="{$product.url}" class="thumbnail product-thumbnail">
           <img
-            src = "{$product.cover.bySize.home_default.url}"
+            src="{$image_placeholder}"
+            data-normal = "{$product.cover.bySize.home_default.url}"
             alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
             data-full-size-image-url = "{$product.cover.large.url}"
+            width="{$product.cover.bySize.home_default.width}"
+            height="{$product.cover.bySize.home_default.height}"
+            data-srcset="{$product.cover.bySize.home_default.url} 400w, {$product.cover.bySize.medium_default.url} 250w"
+            sizes="(max-width: 479px) {$product.cover.bySize.home_default.width}px, {$product.cover.bySize.home_default.height}px"
           >
         </a>
       {/block}

@@ -39,7 +39,7 @@
             </span>
           </div>
           <div class="col-sm-4 col-xs-9 details">
-            {if $add_product_link}<a href="{$product.url}" target="_blank">{/if}
+            {if $add_product_link}<a href="{$product.url}" target="_blank" rel="noopener">{/if}
               <span>{$product.name}</span>
             {if $add_product_link}</a>{/if}
             {if $product.customizations|count}

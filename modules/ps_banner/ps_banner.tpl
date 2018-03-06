@@ -22,9 +22,16 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<a class="banner" href="{$banner_link}" title="{$banner_desc}">
+{assign var="image_placeholder" value='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='}
+
+<a class="banner" href="{$banner_link}" title="{if $banner_desc != ''}{$banner_desc}{else}Banner{/if}">
   {if isset($banner_img)}
-    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
+    <img
+      src="{$image_placeholder}"
+      data-normal="{$banner_img}"
+      width="100%"
+      height="100%"
+      alt="{if $banner_desc != ''}{$banner_desc}{else}Banner{/if}" title="{if $banner_desc != ''}{$banner_desc}{else}Banner{/if}" class="img-fluid">
   {else}
     <span>{$banner_desc}</span>
   {/if}

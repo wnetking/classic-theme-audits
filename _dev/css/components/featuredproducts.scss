@@ -1,4 +1,7 @@
-#products,.featured-products,.product-accessories,.product-miniature  {
+#products,
+.featured-products,
+.product-accessories,
+.product-miniature {
   .products {
     display: flex;
     flex-wrap: wrap;
@@ -21,24 +24,25 @@
     width: 257px;
     background: white;
     @include box-shadow;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .highlighted-informations {
         bottom: 5.5rem;
         &::after {
           opacity: 1;
         }
-        &.no-variants{
+        &.no-variants {
           bottom: 4.2rem;
         }
       }
-      .product-description::after{
-        content: "";
+      .product-description::after {
+        content: '';
         border-top: $gray 1px solid;
         position: absolute;
         width: 80%;
         top: 0;
         left: 10%;
-        opacity: .25;
+        opacity: 0.25;
       }
     }
   }
@@ -75,7 +79,7 @@
     width: 257px;
     height: 3.125rem;
     box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
-    transition: bottom .3s;
+    transition: bottom 0.3s;
     .quick-view {
       color: $gray;
       font-size: $base-font-size;
@@ -125,20 +129,20 @@
         z-index: 2;
         background: $brand-secondary;
       }
-      &.on-sale{
+      &.on-sale {
         background: $brand-secondary;
         width: 100%;
         text-align: center;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
       }
       &.online-only {
         font-size: $font-size-xs;
         margin-top: 13rem;
         margin-left: 8.688rem;
-        &::before{
-          content:"\E30A";
-          font-family: 'Material Icons';
+        &::before {
+          content: '\E30A';
+          font-family: 'Material Icons', 'Arial', 'Helvetica', sans-serif;
           vertical-align: middle;
           margin: 0.3125rem;
         }
@@ -170,10 +174,12 @@
 }
 
 @include media-breakpoint-down(sm) {
-  #products,.featured-products,.product-accessories  {
+  #products,
+  .featured-products,
+  .product-accessories {
     .thumbnail-container {
       @include box-shadow;
-      .product-description{
+      .product-description {
         box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
       }
     }

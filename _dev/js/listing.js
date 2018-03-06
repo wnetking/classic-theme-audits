@@ -28,6 +28,10 @@ import 'velocity-animate';
 
 import ProductMinitature from './components/product-miniature';
 
+//custom scripts
+
+import {checkImageLoad} from './lazy-loading-images'
+
 $(document).ready(() => {
   prestashop.on('clickQuickView', function (elm) {
     let data = {
@@ -145,6 +149,7 @@ $(document).ready(() => {
 
   prestashop.on('updateProductList', (data) => {
     updateProductListDOM(data);
+    checkImageLoad();
   });
 });
 

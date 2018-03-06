@@ -45,10 +45,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 {/block}
 
+{* Custom code include *}
+<link rel="manifest" href="{$urls.theme_assets}manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="{$shop.name}">
+<meta name="apple-mobile-web-app-title" content="{$shop.name}">
+<meta name="msapplication-navbutton-color" content="#000000">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="{$urls.base_url}">
+{*end  Custom code include *}
+
 {block name='head_icons'}
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
+
+
 
 {block name='stylesheets'}
   {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
@@ -63,3 +77,4 @@
 {/block}
 
 {block name='hook_extra'}{/block}
+

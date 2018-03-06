@@ -22,15 +22,18 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
+{assign var="image_placeholder" value='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='}
 {if $homeslider.slides}
-  <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
+  <div id="carousel" data-ride="carousel" class="carousel slide bg-inverse" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
     <ul class="carousel-inner" role="listbox">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
           <a href="{$slide.url}">
             <figure>
-              <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
+              <img
+                src="{$image_placeholder}"
+                data-normal="{$slide.image_url}"
+                alt="{$slide.legend|escape}" {$slide.size}>
               {if $slide.title || $slide.description}
                 <figcaption class="caption">
                   <h2 class="display-1 text-uppercase">{$slide.title}</h2>

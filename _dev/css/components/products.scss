@@ -500,7 +500,7 @@ li.product-flag {
       font-size: $font-size-xs;
       &::before{
         content:"\E30A";
-        font-family: 'Material Icons';
+        font-family: 'Material Icons','Arial', 'Helvetica', sans-serif;
         vertical-align: middle;
         margin: 0.3125rem;
       }

@@ -29,7 +29,7 @@
     {if $rss_links}
       <ul>
         {foreach from=$rss_links item='rss_link'}
-          <li><a href="{$rss_link['link']}" title="{$rss_link['title']}" target="_blank">{$rss_link['title']}</a></li>
+          <li><a href="{$rss_link['link']}" title="{$rss_link['title']}" target="_blank" rel="noopener">{$rss_link['title']}</a></li>
         {/foreach}
       </ul>
     {else}
