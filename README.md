@@ -8,7 +8,13 @@ Development configurations
 - PHP-5.6, Apache-2.4 + Nginx-1.9
 - Prestashop v1.7.3.0
 - clasic theme
-- modules on home page (image slider, featured products, banner, specials block, custom text blocks, new products block)
+- modules on hook `home`:
+  - image slider 
+  - featured products 
+  - banner
+  - specials block 
+  - custom text blocks 
+  - new products block
 - Performance configuration (for audit with cach): 
   - Template compilation - Recompile templates if the files have been updated
   - Cache - yes
