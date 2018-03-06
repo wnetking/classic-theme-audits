@@ -16,16 +16,35 @@ Development configurations
 
 First Audit
 --------
-- Audit in progress
+  After installation Prestashop I made audit of default classic theme.
+  I did audit in two mode : whithout anable cach, and with cach. All results you can find in folder `audit`. 
+  Result after first audit:
   
+  |  -          |     PWA     | Performance | Accessibility | Best Practices |
+  | :---------: | :---------: | :---------: | :-----------: | :------------: |
+  |  -          |     36      |      47     |       94      |        63      |
+  |  with cach  |     --      |      47     |       --      |        --      |
+  
+
+Second Audit (first changes)
+----------
+  So, first that I implemented to inprove performance it is lazy loading images. I used [Layzr.js](http://callmecavs.com/layzr.js/).
+  Second, add defer attr to script tag. Also add `font-display: fallback` to `@font-face`. 
+  Follow the advice that give me Chrome DevTools improve `Accessibilyty` to **100** (Hell yeah! 😺). Allso had good `PWA` and `Best Practices` numbers.
+  
+  |  -          |     PWA     | Performance | Accessibility | Best Practices |
+  | :---------: | :---------: | :---------: | :-----------: | :------------: |
+  |  -          |     45      |      66     |       100     |        75      |
+  |  with cach  |     --      |      --     |       --      |        --      |
   
   
 Roadmap
 ----------
-- [ ] Defered scripts
-- [ ] lazy-load images
+- [x]  Defered scripts
+- [ ] Defered css
+- [x] lazy-load images
 - [ ] implement pwa
-- [ ] improve accessibility
+- [x] improve accessibility
 
 Contribute
 ----------
